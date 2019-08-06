@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollView"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout style="@style/LinearBaseLayout">
+
+        <ImageView
+            style="@style/LogoStyle"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/search" />
+
+        <!--  Name Label -->
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/NameField"
+            android:textColorHint="#888484"
+            android:textColor="#FFFFFF"
+            android:hint="@string/name"
+            android:id="@+id/name"/>
+        <!--  Address Label -->
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/AddressField"
+            android:textColorHint="#888484"
+            android:textColor="#FFFFFF"
+            android:hint="@string/address"
+            android:id="@+id/address"/>
+        <!--  Phone Label -->
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/PhoneField"
+            android:textColorHint="#888484"
+            android:textColor="#FFFFFF"
+            android:hint="@string/phone"
+            android:id="@+id/phone"/>
+        <!--  Email Label -->
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EmailField"
+            android:textColorHint="#888484"
+            android:textColor="#FFFFFF"
+            android:hint="@string/enter_your_e_mail"
+            android:id="@+id/email"/>
+
+        <!--  Password Label -->
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/PasswordField"
+            android:textColorHint="#888484"
+            android:textColor="#FFFFFF"
+            android:hint="@string/password"
+            android:id="@+id/password"/>
+        <!--  Re-Password Label -->
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/RePassword"
+            android:textColorHint="#888484"
+            android:textColor="#FFFFFF"
+            android:hint="@string/re_enter_password"
+            android:id="@+id/repassword"/>
+
+        <!--  Button CreateBtn -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_Registration"
+            style="@style/CreateBtn"
+            android:text="@string/create_account" />
+        <!--  Button Login -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login"
+            style="@style/ExistingAccount"
+            android:text="@string/already_a_member_login" />
+
+    </LinearLayout>
+</ScrollView>
